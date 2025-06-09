@@ -181,7 +181,7 @@ const SkipSummary: React.FC<SkipSummaryProps> = ({
             </div>
           </div>{" "}
           <div className="bg-gradient-to-b from-gray-50 to-white rounded-xl p-3 border border-gray-100 shadow-sm">
-            <div className="text-sm font-medium mb-1 text-gray-500 uppercase tracking-wider text-xs">
+            <div className=" font-medium mb-1 text-gray-500 uppercase tracking-wider text-xs">
               Price Details
             </div>
             <div className="grid grid-cols-2 text-sm gap-y-1">
