@@ -4,7 +4,6 @@ This project is a code challenge solution for REM Waste Company, demonstrating a
 
 ## 🚀 Features
 
-- **Location-Based Skip Search**: Displays available skips by postcode and area
 - **Interactive Skip Selection**: Choose from various skip sizes with detailed information
 - **Skip Size Helper**: Guidance tool to help customers select the right skip size for their needs
 - **Smart Filtering**: Filter skips based on specific criteria (on-road placement, heavy waste allowance)
@@ -72,20 +71,12 @@ rem-waste-demo/
 
 ## 🖥️ Application Flow
 
-1. User enters their location (postcode and area)
-2. Application displays available skips for the location
-3. User can filter and browse different skip options
-4. User selects a skip that meets their requirements
-5. Summary is displayed with selected skip details
-6. User proceeds to the next step of the booking process
+1. Application displays available skips for the location
+2. User can filter and browse different skip options
+3. User selects a skip that meets their requirements
+4. Summary is displayed with selected skip details
+5. User proceeds to the next step of the booking process
 
-## 🧪 Testing
-
-Run tests with:
-
-```bash
-pnpm test
-```
 
 ## 🏗️ Building for Production
 
@@ -132,11 +123,4 @@ The application integrates with the REM Waste API to fetch skip information base
 
 ```typescript
 const API_BASE_URL = "https://app.wewantwaste.co.uk/api";
-```
-
-},
-})
-
-```
-
 ```
