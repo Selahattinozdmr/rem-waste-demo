@@ -44,7 +44,7 @@ const SkipSelectorPage: React.FC = () => {
     loadSkips();
   }, []);
 
-  // Apply filters when filter state changes
+  
   useEffect(() => {
     let filtered = [...skips];
 
@@ -61,7 +61,6 @@ const SkipSelectorPage: React.FC = () => {
 
   const handleSelectSkip = (skip: Skip) => {
     setSelectedSkip(skip);
-    // Scroll to the summary section after a short delay
     setTimeout(() => {
       document
         .getElementById("summary-section")
@@ -77,13 +76,11 @@ const SkipSelectorPage: React.FC = () => {
   };
 
   const handleContinue = () => {
-    // This would navigate to the next step in a real application
     console.log("Continuing with selected skip:", selectedSkip);
     alert("Moving to the next step with your selected skip.");
   };
 
   const handleBack = () => {
-    // This would navigate to the previous step in a real application
     console.log("Going back to previous step");
     alert("Going back to the previous step.");
   };
