@@ -36,7 +36,7 @@ export const getSkipSizeDescription = (size: number): string => {
 /**
  * Get appropriate skip image based on size
  */
-export const getSkipImage = (size: number): string => {
+export const getSkipImage = (): string => {
   return `/4-yarder-skip.jpg`;
 };
 

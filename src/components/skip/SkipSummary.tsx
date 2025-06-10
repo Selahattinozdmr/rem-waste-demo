@@ -30,7 +30,7 @@ const SkipSummary: React.FC<SkipSummaryProps> = ({
   }
   const totalPrice = calculateTotalPrice(skip);
   const vatAmount = skip.price_before_vat * (skip.vat / 100);
-  const skipImageUrl = getSkipImage(skip.size);
+  const skipImageUrl = getSkipImage();
 
   // Fallback image in case the skip image is not found
   const handleImageError = (
