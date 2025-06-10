@@ -1,10 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import type { SkipSummaryProps } from "../../types/skip";
+import type { SkipSummaryProps } from "../../types/types";
 import {
   calculateTotalPrice,
   formatPrice,
-  getSkipImage,
 } from "../../utils/skip-helper";
 
 const wideContainerStyle: React.CSSProperties = {
@@ -30,7 +29,6 @@ const SkipSummary: React.FC<SkipSummaryProps> = ({
   }
   const totalPrice = calculateTotalPrice(skip);
   const vatAmount = skip.price_before_vat * (skip.vat / 100);
-  const skipImageUrl = getSkipImage();
 
   // Fallback image in case the skip image is not found
   const handleImageError = (
@@ -60,11 +58,11 @@ const SkipSummary: React.FC<SkipSummaryProps> = ({
       </div>{" "}
       <div className="p-4">
         {" "}
-        <div className="flex flex-wrap border-b border-gray-100 pb-3 mb-3">
+        <div className="flex flex-wrap border-</div>b border-gray-100 pb-3 mb-3">
           <div className="w-2/4">
             <div className="rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 mr-4">
               <img
-                src={skipImageUrl}
+                src={"/4-yarder-skip.jpg"}
                 alt={`${skip.size} Yard Skip`}
                 className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-300"
                 style={{ maxHeight: "180px" }}

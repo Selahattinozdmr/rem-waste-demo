@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import type { ProgressBarProps } from "../../types/skip";
+import type { ProgressBarProps } from "../../types/types";
 
 const ProgressBar: React.FC<ProgressBarProps> = ({
   currentStep,

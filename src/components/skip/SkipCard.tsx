@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import type { SkipCardProps } from "../../types/skip";
+import type { SkipCardProps } from "../../types/types";
 import { calculateTotalPrice, formatPrice } from "../../utils/skip-helper";
 
 const SkipCard: React.FC<SkipCardProps> = ({

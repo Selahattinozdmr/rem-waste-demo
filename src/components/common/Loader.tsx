@@ -1,5 +1,5 @@
 import React from "react";
-import type { LoaderProps } from "../../types/skip";
+import type { LoaderProps } from "../../types/types";
 
 const Loader: React.FC<LoaderProps> = ({ size = "md", color = "emerald" }) => {
   const sizeClasses = {

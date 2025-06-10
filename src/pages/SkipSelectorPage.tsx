@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { Skip } from "../types/skip";
+import type { Skip } from "../types/types";
 import { fetchSkipsByLocation } from "../utils/api";
 import ProgressBar from "../components/common/ProgressBar";
 import SkipCard from "../components/skip/SkipCard";
@@ -44,7 +44,6 @@ const SkipSelectorPage: React.FC = () => {
     loadSkips();
   }, []);
 
-  
   useEffect(() => {
     let filtered = [...skips];
 

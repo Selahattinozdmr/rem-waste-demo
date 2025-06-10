@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { FAQProps } from "../../types/skip";
+import type { FAQProps } from "../../types/types";
 
 interface FAQItem {
   question: string;
